@@ -1,5 +1,7 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
+    <h1>Dev Match Community</h1>
+    <p>Welcome to the Dev Match community. Users must fill a profile in order to be visible.</p>
     <ul class="list-unstyled">
       <% @users.each do |u| %>
         <% if u.profile %>
@@ -16,9 +18,10 @@
               <div>
                 <%= link_to u do %>
                   <h2><%= u.profile.first_name %> <%= u.profile.last_name %> </h2>
-                  <% if u.plan_id == 2 %>
-                    <p><%= u.profile.job_title %> <span class="label label-success">PRO</span></p>
-                  <% end %>
+                <% end %>
+                <p><%= u.profile.job_title %></p>
+                <% if u.plan_id == 2 %>
+                  <p><span class="label label-success">PRO</span></p>
                 <% end %>
               </div>
             </div>
