@@ -16,7 +16,9 @@
               <div>
                 <%= link_to u do %>
                   <h2><%= u.profile.first_name %> <%= u.profile.last_name %> </h2>
-                  <p><%= u.profile.job_title %></p>
+                  <% if u.plan_id == 2 %>
+                    <p><%= u.profile.job_title %> <span class="label label-success">PRO</span></p>
+                  <% end %>
                 <% end %>
               </div>
             </div>
