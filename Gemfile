@@ -7,7 +7,7 @@ gem 'rails'
 gem 'sqlite3', group: [:development, :test]
 
 # use bootstrap library for styles
-gem 'bootstrap-sass', '3.3.1'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 #use font awesome library for icons
 gem 'font-awesome-sass', '4.2.0'
@@ -39,7 +39,7 @@ gem 'sdoc', '0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # use devise for user auth
-gem 'devise', '3.4.1'
+gem 'devise', '~> 4.6.0'
 
 # use stripe for handling payments
 gem 'stripe', '1.16'
